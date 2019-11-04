@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <style>
+        .size
+        {
+            height: 100px;
+            width: 100px;
+        }
+    </style>
+    <title>Data Binding</title>
+    <script src="https://unpkg.com/vue@2.6.10/dist/vue.js"></script>
+</head>
+<body>
+<div id="app">
+    Name : {{name}} <br>
+    link : {{link}} <br><br>
+
+    <a v-bind:href="link" v-bind:message="message">{{name}}</a> <br> <!--html attribute binding-->
+    <img v-bind:src="img" v-bind:class="{size:isActive}"> <!--html class binding--> <br>
+
+    <form method="post">
+        <input type="text" placeholder="name" v-bind:value="fname"><br>
+        <input type="text" placeholder="email" v-bind:value="femail"><br>  <!--html inputs binding-->
+        <button type="button" name="button">Submit</button>
+    </form>
+    <br>
+    <div v-html="htmlcontent"></div> <!--html content binding-->
+</div>
+
+<script src="3.js"></script>
+
+</body>
+</html>
