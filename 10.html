@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Computer Properties</title>
+    <script src="https://unpkg.com/vue@2.6.10/dist/vue.js"></script>
+</head>
+<body>
+<div id="our-app">
+    <input type="text" v-model="maths" placeholder="maths">
+    <input type="text" v-model="science" placeholder="science">
+    <input type="text" v-model="english" placeholder="english">
+    <h3>Total marks:{{totalSubjectMarks}}</h3>
+    {{runme()}}
+    <br>
+    <input type="text" v-model="meter" placeholder="length in meter"><br>
+    <h4>Length in cm : {{convertToCentimeter}} cm</h4>
+    <br>
+    <br>
+    <input type="text" placeholder="Enter first name" v-model="firstname">
+    <input type="text" placeholder="Enter last name" v-model="lastname">
+    <br>
+    <h4>Full Name: {{getFullName}}</h4>
+
+</div>
+
+<script src="10.js"></script>
+
+</body>
+</html>

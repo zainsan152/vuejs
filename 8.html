@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>key modifiers</title>
+    <script src="https://unpkg.com/vue@2.6.10/dist/vue.js"></script>
+</head>
+<body>
+<div id="our-app">
+    <input type="text" @keypress.enter="keypressfunction"> //when enter press
+    <br><br>
+    <input type="text" @keyup.alt.enter="keypressfunction"> //when alt & enter press
+    <br><br>
+    <input type="text" @keyup.delete="keypressfunction"> //when delete press
+    <br><br>
+    <input type="text" @keyup.ctrl.enter="keypressfunction"> //when ctrl enter press
+    <br><br>
+    <input type="text" @keyup.space="keypressfunction"> //when space press
+    <br><br>
+    <input type="text" @keyup.65="keypressfunction"> //when keycode press
+</div>
+<script src="8.js"></script>
+
+</body>
+</html>

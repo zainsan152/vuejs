@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>event Modifiers</title>
+    <script src="https://unpkg.com/vue@2.6.10/dist/vue.js"></script>
+</head>
+<body>
+<div id="our-app">
+    <h3>Counter: {{counter}}</h3>
+    <button type="button" name="button" @click="incrementby1">+1</button>
+    <button type="button" name="button" @click.once="incrementby1">+1 once</button> <br><br>
+    <a href="https//www.google.com" @click.prevent>Google</a> <br><br>
+    <form action="#" method="post" @submit.prevent>
+        <button type="button" name="button">Submit</button>
+    </form>
+    <br><br>
+    <div id="parent-div" @click="submitClick">
+        <button id="child-div" @click.stop="submitClick">
+            Click me
+        </button>
+    </div>
+    <br><br>
+    <div class="parent-class" @click.capture="parentClass">
+        <button type="button" name="button" @click="btnClick">
+            Click again
+        </button>
+    </div>
+</div>
+
+<script src="7.js"></script>
+
+</body>
+</html>
