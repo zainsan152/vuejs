@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>conditional directives</title>
+    <script src="https://unpkg.com/vue@2.6.10/dist/vue.js"></script>
+
+</head>
+<body>
+<div id="our-app">
+    <p v-if="isActive" id="if-p">if statment</p>
+    <p v-else>else statement</p>
+
+    <p v-show="isActive" id="if-show">show statment</p>
+
+    <br>
+    <br>
+    <button type="button" @click="incrementCountValue"> +1 </button>
+    <h4>count : {{count}}</h4>
+    <p v-if="count == 1">this is value = 1</p>
+    <p v-else-if="count == 2">this is value = 2</p>
+    <p v-else-if="count == 3">this is value = 3</p>
+    <p v-else>no value matches</p>
+
+</div>
+
+<script src="12.js"></script>
+
+</body>
+</html>

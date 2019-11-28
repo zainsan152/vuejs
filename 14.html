@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>multiple instances</title>
+    <script src="https://unpkg.com/vue@2.6.10/dist/vue.js"></script>
+
+</head>
+<body>
+<div id="our-app1">
+    <p>Title:{{title}}</p>
+    <p>{{author}}</p>
+    <p>{{secondApp()}}</p>
+    <p>{{thirdAppfn()}}</p>
+    <p>{{accesscomputed}}</p>
+</div>
+
+<div id="our-app2">
+    <p>author:{{author}}</p>
+    <p>{{secondApp()}}</p>
+</div>
+
+<script src="14.js"></script>
+
+</body>
+</html>
